@@ -5,58 +5,72 @@ import img3 from "../assets/Registration_of_section8company/img3.png"
 import Element_3 from '../components/Element_3'
 import Element_1 from '../components/Element_2'
 
-
 const Registration_of_section8company = () => {
   return (
     <>
-      <div className="container d-flex justify-content-center">
-            <img src={img1} alt="" style={{ maxWidth: "100%" }} />
+      {/* Banner Image */}
+      <div className="container text-center my-3">
+        <img src={img1} alt="Section 8 Registration" className="img-fluid" />
+      </div>
+
+      {/* Hero Section */}
+      <div
+        className="w-100 py-5"
+        style={{
+          fontFamily: "Montserrat, Arial, sans-serif",
+          background: "linear-gradient(to bottom, #c46a2f 0%, #e68741 100%)",
+        }}
+      >
+        <div className="container">
+          <div className="row align-items-center">
+            {/* Left Content */}
+            <div className="col-lg-7 text-white mb-4 mb-lg-0">
+              <h1 className="fw-bold" style={{ fontSize: "clamp(1.8rem, 4vw, 2.5rem)" }}>
+                Section 8 Company Registration
+              </h1>
+              <p className="fs-6">
+                ▶ Empower Change with a Section 8 Company! Register Your Non-Profit with{" "}
+                <span style={{ color: "#ffd08d", fontWeight: 600 }}>JK KANNAKU</span>
+              </p>
+              <p className="fs-6">▶ Section 8 Company registration offers benefits like legal recognition, tax exemptions, grant eligibility, enhanced credibility and ability to pursue charitable objectives with structured governance.</p>
+              <p className="fs-6">▶ We provide a seamless Section 8 Company registration process, handling all documentation and compliance requirements for quick and hassle-free approval</p>
+              <p className="fs-6">▶ For personalised assistance, reach out to our support team today!</p>
+            </div>
+
+            {/* Right Form */}
+            <div className="col-lg-5">
+              <div className="bg-white rounded-3 shadow p-4">
+                <h4 className="fw-bold mb-3">Expert Consultation</h4>
+                <form>
+                  <input type="text" placeholder="Name *" className="form-control mb-3" />
+                  <input type="email" placeholder="Email *" className="form-control mb-3" />
+                  <div className="d-flex mb-3">
+                    <span
+                      className="d-flex align-items-center justify-content-center px-3 bg-light border rounded-start"
+                      style={{ fontWeight: 600 }}
+                    >
+                      +91
+                    </span>
+                    <input type="text" placeholder="Mobile Number*" className="form-control rounded-end" />
+                  </div>
+                  <button type="submit" className="btn w-100 fw-bold text-white" style={{ background: "#c46a2f" }}>
+                    Get Start Now &gt;
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
 
+      {/* Middle Connector */}
+      <Element_1 />
 
-        
-<div style={{ fontFamily: "Montserrat, Arial, sans-serif", background: "linear-gradient(to bottom, #c46a2f 0%, #e68741 100%)", padding: 0, }}> 
-
-<div style={{ maxWidth: 1050, height: "500px", margin: "40px auto",  display: "flex", alignItems: "center", justifyContent: "center", padding: "0",}}>
-
-
-
- {/* Left content */} 
-
-
-
-
-<div style={{ flex: 2, color: "white", paddingRight: 50 }}> 
-<h1 style={{ fontWeight: 700, fontSize: 40, marginBottom: 25 }}>Section 8 Company Registration</h1> 
-
-<div style={{ fontSize: 15, marginBottom: 20 }}> <span style={{ color: "#fff" }}> &#9654; Empower Change with a Section 8 Company! Register Your Non-Profit with <span style={{ color: "#ffd08d", fontWeight: 600 }}>JK KANNAKU</span></span> </div> 
-
-<div style={{ fontSize: 16, lineHeight: "2" }}> 
-
-<div>&#9679; Section 8 Company registration offers benefits like legal recognition, tax exemptions, grant eligibility, enhanced credibility and ability to pursue charitable objectives with structured governance.</div> 
-
-<div>&#9654; We provide a seamless Section 8 Company registration process, handling all documentation and compliance requirements for quick and hassle-free approval</div> 
-
-<div>&#9654; For personalised assistance, reach out to our support team today!</div> 
-
- </div> </div> 
-
-
-
- {/* Right form card */} 
-
-<div style={{ flex: 1, background: "#fff", borderRadius: 12, boxShadow: "0 4px 18px 0 rgba(0,0,0,0.07)", padding: "32px 30px 26px 30px", display: "flex", flexDirection: "column" }}> 
-
-<div style={{ fontWeight: 700, fontSize: 22, marginBottom: 22, textAlign: "left" }}> Expert Consultation </div> <input type="text" placeholder="Name *" style={{ width: "100%", marginBottom: 12, padding: "12px 9px", fontSize: 16, borderRadius: 7, border: "1.2px solid #e5e8ee" }} /> <input type="email" placeholder="Email*" style={{ width: "100%", marginBottom: 12, padding: "12px 9px", fontSize: 16, borderRadius: 7, border: "1.2px solid #e5e8ee" }} /> 
-
-<div style={{ display: "flex", marginBottom: 17 }}> <span style={{ padding: "12px 10px", background: "#ece5e0", border: "1px solid #e5e8ee", borderRadius: "7px 0 0 7px", fontSize: 16, minWidth: 54, fontWeight: 600, textAlign: "center", color: "#222" }}>+91</span> <input type="text" placeholder="Mobile Number*" style={{ flex: 1, padding: "12px 9px", fontSize: 16, borderRadius: "0 7px 7px 0", border: "1.2px solid #e5e8ee", borderLeft: "none" }} /> </div> <button style={{ backgroundColor: "#c46a2f", color: "white", border: "none", padding: "13px 0", width: "100%", borderRadius: 7, cursor: "pointer", fontWeight: "bold", fontSize: 16, transition: "background 0.2s" }}> Get Start Now &gt; </button> </div> </div> </div>
-<Element_1/>
-
-<div className="container-fluid">
-    <div className="row">
-        
-        <div className="col-lg-8">
-
+      {/* Main Content */}
+      <div className="container-fluid my-5">
+        <div className="row g-4">
+          {/* Left Content */}
+          <div className="col-lg-8">
             <h2 style={{ color: "#0a3c66", fontWeight: "bold" }}>Documents Required for Section 8 Company Registration</h2>
             
 
@@ -115,70 +129,38 @@ const Registration_of_section8company = () => {
 
             <h4 style={{ fontWeight: "bold" }}>STEP 9: Open a Bank Account</h4>
             <p>Use the Certificate of Incorporation, PAN, and other documents to open a bank account in the company's name.</p>
-
-        </div>
-        
-        
-        
-        <div className="col-lg-4">
-          <div className="row">
-          <div className="card shadow" style={{ borderRadius: "1.5rem", width:"400px", height:"500px" }}>
-            <div className="card-body p-4">
-              <h5 className="fw-bold mb-3 text-center">Expert Consultation</h5>
-              <form>
-                <div className="mb-3">
-                  <input type="text" className="form-control" placeholder="Name *" />
-                </div>
-                <div className="mb-3">
-                  <input type="email" className="form-control" placeholder="Email*" />
-                </div>
-                <div className="mb-3 d-flex">
-                  <input
-                    type="text"
-                    className="form-control"
-                    value="+91"
-                    style={{ maxWidth: "70px", background: "#eee" }}
-                    readOnly
-                  />
-                  <input type="tel" className="form-control" placeholder="Mobile Number*" />
-                </div>
-                <button
-                  type="submit"
-                  className="btn btn-warning w-100 fw-bold"
-                  style={{
-                    background: "#b85423",
-                    color: "white",
-                    borderRadius: "1.5rem"
-                  }}
-                >
-                  Get Start Now &gt;
-                </button>
-              </form>
-            </div>
           </div>
-        </div>
-        <div className="row">
-          <div style={{ flexBasis: '100%', maxWidth: '100%', marginTop:"200px" }}>
-          <img
-            src={img2}
-            alt="Business Woman Partnership Registration"
-            style={{ width: '100%', height: 'auto', borderRadius: '8px' }}
-            className="img-fluid"
-          />
-        </div>          
+
+          {/* Right Sidebar */}
+          <div className="col-lg-4">
+            <div className="card shadow rounded-4 mb-4">
+              <div className="card-body p-4">
+                <h5 className="fw-bold mb-3 text-center">Expert Consultation</h5>
+                <form>
+                  <input type="text" className="form-control mb-3" placeholder="Name *" />
+                  <input type="email" className="form-control mb-3" placeholder="Email*" />
+                  <div className="d-flex mb-3">
+                    <input type="text" className="form-control" value="+91" style={{ maxWidth: "70px", background: "#eee" }} readOnly />
+                    <input type="tel" className="form-control" placeholder="Mobile Number*" />
+                  </div>
+                  <button type="submit" className="btn w-100 fw-bold text-white" style={{ background: "#b85423" }}>
+                    Get Start Now &gt;
+                  </button>
+                </form>
+              </div>
+            </div>
+
+            <img src={img2} alt="Business Woman" className="img-fluid rounded my-4" />
+          </div>
         </div>
       </div>
 
+      {/* Footer Image */}
+      <div className="container text-center my-5">
+        <img src={img3} alt="Section 8 Footer" className="img-fluid" />
+      </div>
 
-
-    </div>
-</div>
-
-<div className="container d-flex justify-content-center">
-            <img src={img3} alt="" style={{ maxWidth: "100%" }} />
-        </div>
-
-<Element_3/>
+      <Element_3 />
     </>
   )
 }

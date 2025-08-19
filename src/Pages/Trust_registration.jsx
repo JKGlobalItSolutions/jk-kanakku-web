@@ -1,61 +1,93 @@
-import React from 'react'
-import img1 from "../assets/Trust_registration/img1.png"
-import img2 from "../assets/Trust_registration/img2.png"
-import img3 from "../assets/Trust_registration/img3.png"
-import Element_2 from '../components/Element_2'
-import Element_3 from '../components/Element_3'
-
+import React from "react";
+import img1 from "../assets/Trust_registration/img1.png";
+import img2 from "../assets/Trust_registration/img2.png";
+import img3 from "../assets/Trust_registration/img3.png";
+import Element_2 from "../components/Element_2";
+import Element_3 from "../components/Element_3";
 
 const Trust_registration = () => {
   return (
     <>
-    <div className="container d-flex justify-content-center">
-  <img src={img1} alt="" style={{ maxWidth: "100%" }} />
-</div>
+      {/* Top Banner */}
+      <div className="container d-flex justify-content-center my-3">
+        <img src={img1} alt="Trust Registration Banner" className="img-fluid" />
+      </div>
 
-<div style={{ fontFamily: "Montserrat, Arial, sans-serif", background: "linear-gradient(to bottom, #c46a2f 0%, #e68741 100%)", padding: 0, }}> 
+      {/* Hero Section */}
+      <div
+        style={{
+          fontFamily: "Montserrat, Arial, sans-serif",
+          background: "linear-gradient(to bottom, #c46a2f 0%, #e68741 100%)",
+        }}
+      >
+        <div className="container py-5">
+          <div className="row align-items-center">
+            {/* Left Content */}
+            <div className="col-lg-7 text-white mb-4 mb-lg-0">
+              <h1 className="fw-bold display-6 mb-3">Trust Registration</h1>
+              <p className="fs-6 mb-2">
+                ▶ Secure Your Future: Register Your Trust with{" "}
+                <span className="fw-bold" style={{ color: "#ffd08d" }}>
+                  JK KANNAKU
+                </span>
+              </p>
+              <p className="fs-6 lh-lg">
+                ▶ Trust registration enhances credibility, ensures legal
+                protection, provides tax benefits and facilitates access to
+                grants and donations
+              </p>
+              <p className="fs-6">● Ensure compliance and credibility with our dedicated support throughout the registration process</p>
+              <p className="fs-6">
+                ▶ Safeguard your assets and ensure your legacy with a secure
+                trust registration process from JK Kannaku
+              </p>
+            </div>
 
-<div style={{ maxWidth: 1050, height: "500px", margin: "40px auto",  display: "flex", alignItems: "center", justifyContent: "center", padding: "0",}}>
+            {/* Right Form */}
+            <div className="col-lg-5">
+              <div className="bg-white rounded-4 shadow p-4">
+                <h4 className="fw-bold mb-3">Expert Consultation</h4>
+                <form>
+                  <input
+                    type="text"
+                    className="form-control mb-3"
+                    placeholder="Name *"
+                  />
+                  <input
+                    type="email"
+                    className="form-control mb-3"
+                    placeholder="Email *"
+                  />
+                  <div className="input-group mb-3">
+                    <span className="input-group-text">+91</span>
+                    <input
+                      type="tel"
+                      className="form-control"
+                      placeholder="Mobile Number *"
+                    />
+                  </div>
+                  <button
+                    type="submit"
+                    className="btn w-100 fw-bold text-white"
+                    style={{ backgroundColor: "#c46a2f" }}
+                  >
+                    Get Start Now &gt;
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
- {/* Left content */} 
+      <Element_2/>
 
-<div style={{ flex: 2, color: "white", paddingRight: 50 }}> 
-<h1 style={{ fontWeight: 700, fontSize: 40, marginBottom: 25 }}>Trust Registration</h1> 
-
-<div style={{ fontSize: 15, marginBottom: 20 }}> <span style={{ color: "#fff" }}> &#9654; Secure Your Future: Register Your Trust with <span style={{ color: "#ffd08d", fontWeight: 600 }}>JK KANNAKU</span> </span> </div> 
-
-<div style={{ fontSize: 16, lineHeight: "2" }}> 
-  
-<div>&#9654; Trust registration enhances credibility, ensures legal protection, provides tax benefits and facilitates access to grants and donations</div> 
-
-<div>&#9679; Ensure compliance and credibility with our dedicated support throughout the registration process</div> 
-
-<div>&#9654; Safeguard your assets and ensure your legacy with a secure trust registration process from JK Kannaku</div> 
-
-
- </div> </div> 
-
-
-
- {/* Right form card */} 
-
-<div style={{ flex: 1, background: "#fff", borderRadius: 12, boxShadow: "0 4px 18px 0 rgba(0,0,0,0.07)", padding: "32px 30px 26px 30px", display: "flex", flexDirection: "column" }}> 
-
-<div style={{ fontWeight: 700, fontSize: 22, marginBottom: 22, textAlign: "left" }}> Expert Consultation </div> <input type="text" placeholder="Name *" style={{ width: "100%", marginBottom: 12, padding: "12px 9px", fontSize: 16, borderRadius: 7, border: "1.2px solid #e5e8ee" }} /> <input type="email" placeholder="Email*" style={{ width: "100%", marginBottom: 12, padding: "12px 9px", fontSize: 16, borderRadius: 7, border: "1.2px solid #e5e8ee" }} /> 
-
-<div style={{ display: "flex", marginBottom: 17 }}> <span style={{ padding: "12px 10px", background: "#ece5e0", border: "1px solid #e5e8ee", borderRadius: "7px 0 0 7px", fontSize: 16, minWidth: 54, fontWeight: 600, textAlign: "center", color: "#222" }}>+91</span> <input type="text" placeholder="Mobile Number*" style={{ flex: 1, padding: "12px 9px", fontSize: 16, borderRadius: "0 7px 7px 0", border: "1.2px solid #e5e8ee", borderLeft: "none" }} /> </div> <button style={{ backgroundColor: "#c46a2f", color: "white", border: "none", padding: "13px 0", width: "100%", borderRadius: 7, cursor: "pointer", fontWeight: "bold", fontSize: 16, transition: "background 0.2s" }}> Get Start Now &gt; </button> </div> </div> </div>
-
-
-<Element_2/>
-
-<div className="container-fluid">
-<div className="row">
-
-<div className="col-lg-8">
-
-{/*heading 1*/}
-
-<h2 style={{ color: "#0a3c66", fontWeight: "bold" }}>Documents Required for Trust Registration in India</h2>
+      {/* Documents + Process Section */}
+      <div className="container-fluid my-5">
+        <div className="row g-4">
+          {/* Left Content */}
+          <div className="col-lg-8">
+            <h2 style={{ color: "#0a3c66", fontWeight: "bold" }}>Documents Required for Trust Registration in India</h2>
 <ol>
 <li>For verification purposes, a self-attested copy of the settlor and trustee's Aadhar card, voter ID card, or passport will be required</li>
 <li>PAN card of the settlor and trustee</li>
@@ -110,79 +142,66 @@ const Trust_registration = () => {
 
 <h3 style={{ fontWeight: "bold" }}>STEP 6: Open a Bank Account</h3>
 <p>With the PAN, open a bank account in the trust's name to manage its funds and financial activities</p>
+          </div>
 
-</div>
+          {/* Right Side Card + Image */}
+          <div className="col-lg-4">
+            <div className="card shadow rounded-4 mb-4">
+              <div className="card-body p-4">
+                <h5 className="fw-bold mb-3 text-center">
+                  Expert Consultation
+                </h5>
+                <form>
+                  <input
+                    type="text"
+                    className="form-control mb-3"
+                    placeholder="Name *"
+                  />
+                  <input
+                    type="email"
+                    className="form-control mb-3"
+                    placeholder="Email *"
+                  />
+                  <div className="input-group mb-3">
+                    <span className="input-group-text">+91</span>
+                    <input
+                      type="tel"
+                      className="form-control"
+                      placeholder="Mobile Number *"
+                    />
+                  </div>
+                  <button
+                    type="submit"
+                    className="btn btn-warning w-100 fw-bold"
+                    style={{
+                      background: "#b85423",
+                      color: "white",
+                      borderRadius: "1.5rem",
+                    }}
+                  >
+                    Get Start Now &gt;
+                  </button>
+                </form>
+              </div>
+            </div>
 
+            <img
+              src={img2}
+              alt="Business Woman Partnership Registration"
+              className="img-fluid rounded"
+            />
+          </div>
+        </div>
+      </div>
 
+      {/* Bottom Banner */}
+      <div className="container d-flex justify-content-center my-3">
+        <img src={img3} alt="Trust Registration Banner" className="img-fluid" />
+      </div>
 
-<div className="col-lg-4">
-<div className="row">
-<div className="card shadow" style={{ borderRadius: "1.5rem", width:"400px", height:"500px" }}>
-<div className="card-body p-4">
- <h5 className="fw-bold mb-3 text-center">Expert Consultation</h5>
- <form>
-<div className="mb-3">
- <input type="text" className="form-control" placeholder="Name *" />
-</div>
-<div className="mb-3">
- <input type="email" className="form-control" placeholder="Email*" />
-</div>
-<div className="mb-3 d-flex">
- <input
-type="text"
-className="form-control"
-value="+91"
-style={{ maxWidth: "70px", background: "#eee" }}
-readOnly
- />
- <input type="tel" className="form-control" placeholder="Mobile Number*" />
-</div>
-<button
- type="submit"
- className="btn btn-warning w-100 fw-bold"
- style={{
-background: "#b85423",
-color: "white",
-borderRadius: "1.5rem"
- }}
->
- Get Start Now &gt;
-</button>
- </form>
-</div>
-</div>
-</div>
-
-
-<div className="row">
-<div style={{ flexBasis: '100%', maxWidth: '100%', marginTop:"200px" }}>
-<img
-src={img2}
-alt="Business Woman Partnership Registration"
-style={{ width: '100%', height: 'auto', borderRadius: '8px' }}
-className="img-fluid"
-/></div>
-</div>
-</div>
-
-
-
-</div>
-</div>
-
-
-
-<div className="container d-flex justify-content-center">
-<img src={img3} alt="" style={{ maxWidth: "100%" }} />
-</div>
-
-
-
-<Element_3/>
-
-      
+      <Element_3 />
     </>
-  )
-}
+  );
+};
 
-export default Trust_registration
+export default Trust_registration;

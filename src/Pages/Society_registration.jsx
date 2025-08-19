@@ -20,13 +20,14 @@ const Society_registration = () => {
           {/* Left Text */}
           <div className="col-lg-8 col-md-12 text-white px-4">
             <h1 className="fw-bold mb-4" style={{ fontSize: "2.5rem" }}>Society Registration</h1>
-            <p className="mb-3">
+            
+            <ul className="ps-3" style={{ lineHeight: "1.8", listStyleType:"none" }}>
+            <li>
               &#9654; Join Hands for a Better Tomorrow! Register Your Society with <span style={{ color: "#ffd08d", fontWeight: 600 }}>JK KANNAKU</span>
-            </p>
-            <ul className="ps-3" style={{ lineHeight: "1.8" }}>
-              <li>Society registration provides legal recognition, access to government grants, tax exemptions, enhanced credibility, and the ability to open a bank account.</li>
-              <li>We provide expert guidance through every step of society registration, from document preparation to final submission, with our dedicated support team.</li>
-              <li>Visit us and get your society registered in no time and start impacting your community!</li>
+            </li>
+              <li>&#9654; Society registration provides legal recognition, access to government grants, tax exemptions, enhanced credibility, and the ability to open a bank account.</li>
+              <li>&#9654; We provide expert guidance through every step of society registration, from document preparation to final submission, with our dedicated support team.</li>
+              <li>&#9654; Visit us and get your society registered in no time and start impacting your community!</li>
             </ul>
           </div>
 

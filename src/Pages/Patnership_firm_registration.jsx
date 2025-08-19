@@ -5,91 +5,112 @@ import img3 from "../assets/Patnership_firm_registration/img3.png"
 import img4 from "../assets/Patnership_firm_registration/img4.png"
 import Element_3 from '../components/Element_3'
 import Element_2 from '../components/Element_2'
+import { Link } from 'react-router-dom'
 const Patnership_firm_registration = () => {
   return (
     <>
-      <div className="container d-flex justify-content-center">
-      <img src={img1} alt="" style={{ maxWidth: "100%" }} />
-    </div>
+      <nav aria-label="breadcrumb" className="bg-white py-2">
+<div className="container">
+<ol className="breadcrumb mb-0" >
+<li className="breadcrumb-item">
+<Link to="/" className="text-decoration-none fw-bold" style={{color:"black"}}>Home</Link>
+</li>
+<li className="breadcrumb-item fw-bold" style={{color:"black"}}>
+{/* <Link to="/registration" className="text-decoration-none fw-bold" style={{color:"black"}}> */}
+Startup
+{/* </Link> */}
+</li>
+<li className="breadcrumb-item active fw-bold" style={{color:"black"}} aria-current="page">
+Partnership Firm Registration
+</li>
+</ol>
+</div>
+</nav>
 
-    <div className="container py-5 mt-5" style={{ background: "#b85423", color: "white" }}>
-      <div className="row justify-content-center align-items-center">
-        {/* Left: Content Section */}
-        <div className="col-lg-7 mb-4">
-          <h2 className="fw-bold mb-3">Partnership Firm Registration</h2>
-          <ul className="list-group mb-4" style={{ listStyleType: "none", background: "transparent" }}>
-            <li>
-              <span className="me-2 text-warning" style={{ fontWeight: "bold" }}>&gt;</span>
-              Register your partnership firm hassle-free with JK Kannaku in 3 days
-            </li>
-            <li>
-              <span className="me-2 text-warning" style={{ fontWeight: "bold" }}>&gt;</span>
-              Our comprehensive service includes drafting of Partnership Deed
-            </li>
-            <li>
-              <span className="me-2 text-warning" style={{ fontWeight: "bold" }}>&gt;</span>
-              Obtain PAN Card for your partnership firm swiftly
-            </li>
-            <li>
-              <span className="me-2 text-warning" style={{ fontWeight: "bold" }}>&gt;</span>
-              Ensure seamless Form C submission with expert guidance
-            </li>
-            <li>
-              <span className="me-2 text-warning" style={{ fontWeight: "bold" }}>&gt;</span>
-              Receive your partnership registration certificate promptly
-            </li>
-            <li>
-              <span className="me-2 text-warning" style={{ fontWeight: "bold" }}>&gt;</span>
-              Get a free consultation and start your partnership journey today!
-            </li>
-          </ul>
-        </div>
 
-        {/* Right: Expert Consultation Form */}
-        <div className="col-lg-4">
-          <div className="card shadow" style={{ borderRadius: "1.5rem" }}>
-            <div className="card-body p-4">
-              <h5 className="fw-bold mb-3 text-center">Expert Consultation</h5>
-              <form>
-                <div className="mb-3">
-                  <input type="text" className="form-control" placeholder="Name *" />
-                </div>
-                <div className="mb-3">
-                  <input type="email" className="form-control" placeholder="Email*" />
-                </div>
-                <div className="mb-3 d-flex">
-                  <input
-                    type="text"
-                    className="form-control"
-                    value="+91"
-                    style={{ maxWidth: "70px", background: "#eee" }}
-                    readOnly
-                  />
-                  <input type="tel" className="form-control" placeholder="Mobile Number*" />
-                </div>
-                <button
-                  type="submit"
-                  className="btn btn-warning w-100 fw-bold"
-                  style={{
-                    background: "#b85423",
-                    color: "white",
-                    borderRadius: "1.5rem"
-                  }}
-                >
-                  Get Start Now &gt;
-                </button>
-              </form>
+<div className="container d-flex justify-content-center">
+<img src={img1} alt="" style={{ maxWidth: "100%" }} />
+</div>
+
+<div 
+  className="w-100 py-5" 
+  style={{ 
+    fontFamily: "Montserrat, Arial, sans-serif", 
+    background: "linear-gradient(to bottom, #c46a2f 0%, #e68741 100%)" 
+  }}
+>
+  <div className="container">
+    <div className="row align-items-center g-4">
+      
+      {/* Left content */}
+      <div className="col-lg-7 text-white">
+        <h1 className="fw-bold display-5 mb-3">
+          Partnership Firm Registration
+        </h1>
+
+        <p className="fs-6 mb-3">
+          ▶ Register your partnership firm hassle-free with 
+          <span className="fw-semibold text-warning"> JK KANNAKU</span>
+        </p>
+
+        <ul className="list-unstyled fs-6 lh-lg">
+          <li>▶ Drafting of Partnership Deed</li>
+          <li>▶ PAN Card for your partnership firm</li>
+          <li>▶ Seamless Form C submission</li>
+          <li>▶ Registration certificate promptly</li>
+          <li>▶ Free consultation to start your journey</li>
+        </ul>
+      </div>
+
+      {/* Right form card */}
+      <div className="col-lg-5">
+        <div className="bg-white p-4 rounded-4 shadow">
+          <h4 className="fw-bold mb-3">Expert Consultation</h4>
+          <form>
+            <input 
+              type="text" 
+              placeholder="Name *" 
+              className="form-control mb-3" 
+            />
+            <input 
+              type="email" 
+              placeholder="Email *" 
+              className="form-control mb-3" 
+            />
+            <div className="input-group mb-3">
+              <span className="input-group-text fw-semibold">+91</span>
+              <input 
+                type="text" 
+                placeholder="Mobile Number*" 
+                className="form-control" 
+              />
             </div>
-          </div>
+            <button 
+              className="btn w-100 fw-bold text-white" 
+              style={{ background: "#c46a2f" }}
+            >
+              Get Start Now &gt;
+            </button>
+          </form>
         </div>
       </div>
+
     </div>
+  </div>
+</div>
+
+
+
 <Element_2/>
- <div className="container py-5 mt-4" style={{ background: "#fff", color: "#333" }}>
-      <div className="row justify-content-center align-items-center">
+
+
+
+
+ <div className="container-fluid" style={{ background: "#fff", color: "#333" }}>
+      <div className="row ">
         {/* Left: Document Checklist */}
         <div className="col-lg-7 mb-4">
-          <h2 className="fw-bold mb-3" style={{ color: "#234f95" }}>
+          <h2 className="fw-bold mb-3" style={{ color: "#0a3c66" }}>
             Documents Required for Partnership Firm Registration
           </h2>
           <div style={{ color: "#fc813d", fontWeight: 500, marginBottom: "18px", fontSize: "1rem" }}>
@@ -173,7 +194,7 @@ const Patnership_firm_registration = () => {
       </div>
     </div>
 
-  <div className="d-flex justify-content-between align-items-start" style={{ gap: '30px' }}>
+  <div className=" container-fluid" style={{ gap: '30px' }}>
   {/* Left side: Partnership Registration Content */}
   <div
     className="flex-grow-1"
@@ -274,7 +295,7 @@ const Patnership_firm_registration = () => {
   </div>
 </div>
 
-<div style={{ width: '100vw', padding: '0 15px' }}>
+<div className="container-fluid">
   <h2 className="fw-bold mb-3" style={{ color: '#234f95', fontSize: '2rem' }}>
     Partnership Firm Registration Process in India
   </h2>
@@ -358,16 +379,17 @@ const Patnership_firm_registration = () => {
     By following these straightforward steps, you can efficiently complete the partnership firm registration process, establish a legally compliant entity, and lay a strong foundation for your business.
   </p>
 
-  {/* Bottom image left aligned */}
-  <div style={{ marginTop: '40px', textAlign: 'left' }}>
-    <img
-      src={img4}
-      alt="Partnership Registration"
-      style={{ maxWidth: '480px', width: '100%', height: 'auto' }}
-      className="img-fluid"
+  {/* Bottom image */}
+  <div className="mt-5 text-start">
+    <img 
+      src={img4} 
+      alt="Partnership Registration" 
+      className="img-fluid rounded w-100" 
+      style={{ maxWidth: "480px" }} 
     />
   </div>
 </div>
+
 
 <Element_3/>
     </>

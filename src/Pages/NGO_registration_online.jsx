@@ -8,23 +8,24 @@ import Element_3 from '../components/Element_3'
 const NGO_registration_online = () => {
   return (
     <>
-    <div className="container d-flex justify-content-center">
-      <img src={img1} alt="" style={{ maxWidth: "100%" }} />
-    </div>
-    
-<div style={{ fontFamily: "Montserrat, Arial, sans-serif", background: "linear-gradient(to bottom, #c46a2f 0%, #e68741 100%)", padding: 0, }}> 
+      {/* Top Banner Image */}
+      <div className="container d-flex justify-content-center">
+        <img src={img1} alt="NGO Registration" className="img-fluid" />
+      </div>
 
-<div style={{ maxWidth: 1050, height: "500px", margin: "40px auto",  display: "flex", alignItems: "center", justifyContent: "center", padding: "0",}}>
-
-
-
- {/* Left content */} 
-
-
-
-
-<div style={{ flex: 2, color: "white", paddingRight: 50 }}> 
-<h1 style={{ fontWeight: 700, fontSize: 40, marginBottom: 25 }}>NGO Registration Online</h1> 
+      {/* Hero Section */}
+      <div
+        style={{
+          fontFamily: "Montserrat, Arial, sans-serif",
+          background: "linear-gradient(to bottom, #c46a2f 0%, #e68741 100%)",
+          padding: "40px 0",
+        }}
+      >
+        <div className="container">
+          <div className="row align-items-center">
+            {/* Left Content */}
+            <div className="col-lg-7 col-md-12 text-white mb-4 mb-lg-0">
+              <h1 style={{ fontWeight: 700, fontSize: 40, marginBottom: 25 }}>NGO Registration Online</h1> 
 
 <div style={{ fontSize: 15, marginBottom: 20 }}> <span style={{ color: "#fff" }}> &#9654; Get your NGO registered with <span style={{ color: "#ffd08d", fontWeight: 600 }}>JK KANNAKU</span> streamlined and expert guidance</span> </div> 
 
@@ -36,30 +37,70 @@ const NGO_registration_online = () => {
 
 <div>&#9654; Partner with JK Kannaku and start your NGO journey today!</div> 
 
- </div> </div> 
+ </div>
+            </div>
 
+            {/* Right Form Card */}
+            <div className="col-lg-5 col-md-12">
+              <div
+                className="p-4 bg-white shadow rounded-3"
+                style={{ minHeight: "100%" }}
+              >
+                <h5 className="fw-bold mb-3">Expert Consultation</h5>
+                <form>
+                  <div className="mb-3">
+                    <input type="text" className="form-control" placeholder="Name *" />
+                  </div>
+                  <div className="mb-3">
+                    <input type="email" className="form-control" placeholder="Email*" />
+                  </div>
+                  <div className="mb-3 d-flex">
+                    <span
+                      className="d-flex align-items-center justify-content-center"
+                      style={{
+                        padding: "0 12px",
+                        background: "#eee",
+                        border: "1px solid #e5e8ee",
+                        borderRadius: "7px 0 0 7px",
+                        fontWeight: 600,
+                      }}
+                    >
+                      +91
+                    </span>
+                    <input
+                      type="tel"
+                      className="form-control"
+                      placeholder="Mobile Number*"
+                      style={{ borderRadius: "0 7px 7px 0" }}
+                    />
+                  </div>
+                  <button
+                    type="submit"
+                    className="btn w-100 fw-bold"
+                    style={{
+                      background: "#b85423",
+                      color: "white",
+                      borderRadius: "7px",
+                    }}
+                  >
+                    Get Start Now &gt;
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
+      {/* Arrow Section */}
+      <Element_2 />
 
- {/* Right form card */} 
-
-<div style={{ flex: 1, background: "#fff", borderRadius: 12, boxShadow: "0 4px 18px 0 rgba(0,0,0,0.07)", padding: "32px 30px 26px 30px", display: "flex", flexDirection: "column" }}> 
-
-<div style={{ fontWeight: 700, fontSize: 22, marginBottom: 22, textAlign: "left" }}> Expert Consultation </div> <input type="text" placeholder="Name *" style={{ width: "100%", marginBottom: 12, padding: "12px 9px", fontSize: 16, borderRadius: 7, border: "1.2px solid #e5e8ee" }} /> <input type="email" placeholder="Email*" style={{ width: "100%", marginBottom: 12, padding: "12px 9px", fontSize: 16, borderRadius: 7, border: "1.2px solid #e5e8ee" }} /> 
-
-<div style={{ display: "flex", marginBottom: 17 }}> <span style={{ padding: "12px 10px", background: "#ece5e0", border: "1px solid #e5e8ee", borderRadius: "7px 0 0 7px", fontSize: 16, minWidth: 54, fontWeight: 600, textAlign: "center", color: "#222" }}>+91</span> <input type="text" placeholder="Mobile Number*" style={{ flex: 1, padding: "12px 9px", fontSize: 16, borderRadius: "0 7px 7px 0", border: "1.2px solid #e5e8ee", borderLeft: "none" }} /> </div> <button style={{ backgroundColor: "#c46a2f", color: "white", border: "none", padding: "13px 0", width: "100%", borderRadius: 7, cursor: "pointer", fontWeight: "bold", fontSize: 16, transition: "background 0.2s" }}> Get Start Now &gt; </button> </div> </div> </div>
-
-
-<Element_2/>
-
-
-<div className="container-fluid">
-    <div className="row">
-        
-        <div className="col-lg-8">
-
-{/*heading 1*/}
-
-<h2 style={{ color: "#0a3c66", fontWeight: "bold" }}>Documents Required for NGO Registration </h2>
+      {/* Content & Sidebar Section */}
+      <div className="container-fluid my-5">
+        <div className="row">
+          {/* Main Content */}
+          <div className="col-lg-8 col-md-12">
+            <h2 style={{ color: "#0a3c66", fontWeight: "bold" }}>Documents Required for NGO Registration </h2>
 
 <h3 style={{ fontWeight: "bold" }}>Common Documents</h3>
 <p>Identity proof (Aadhar, PAN, Passport, Voter ID)</p>
@@ -130,73 +171,57 @@ const NGO_registration_online = () => {
 <p>INC-15: Subscriber Declaration</p>
 <p>DIR-2: Consent to act as Director</p>
 <p>INC-9: Declaration by subscribers/directors</p>
-</div>
-        
-        
-        
-        <div className="col-lg-4">
-          <div className="row">
-          <div className="card shadow" style={{ borderRadius: "1.5rem", width:"400px", height:"500px" }}>
-<div className="card-body p-4">
-<h5 className="fw-bold mb-3 text-center">Expert Consultation</h5>
-<form>
-<div className="mb-3">
-<input type="text" className="form-control" placeholder="Name *" />
-</div>
-<div className="mb-3">
-<input type="email" className="form-control" placeholder="Email*" />
-</div>
-<div className="mb-3 d-flex">
-<input
-type="text"
-className="form-control"
-value="+91"
-style={{ maxWidth: "70px", background: "#eee" }}
-readOnly
-/>
-<input type="tel" className="form-control" placeholder="Mobile Number*" />
-</div>
-<button
-type="submit"
-className="btn btn-warning w-100 fw-bold"
-style={{
-background: "#b85423",
-color: "white",
-borderRadius: "1.5rem"
-}}
->
-Get Start Now &gt;
-</button>
-</form>
-</div>
           </div>
-        </div>
-        <div className="row">
-          <div style={{ flexBasis: '100%', maxWidth: '100%', marginTop:"200px" }}>
-          <img
-src={img2}
-alt="Business Woman Partnership Registration"
-style={{ width: '100%', height: 'auto', borderRadius: '8px' }}
-className="img-fluid"
-          />
-        </div>          
+
+          {/* Sidebar */}
+          <div className="col-lg-4 col-md-12 mt-5 mt-lg-0">
+            <div className="card shadow rounded-4 mb-4">
+              <div className="card-body p-4">
+                <h5 className="fw-bold mb-3 text-center">Expert Consultation</h5>
+                <form>
+                  <div className="mb-3">
+                    <input type="text" className="form-control" placeholder="Name *" />
+                  </div>
+                  <div className="mb-3">
+                    <input type="email" className="form-control" placeholder="Email*" />
+                  </div>
+                  <div className="mb-3 d-flex">
+                    <input
+                      type="text"
+                      className="form-control"
+                      value="+91"
+                      style={{ maxWidth: "70px", background: "#eee" }}
+                      readOnly
+                    />
+                    <input type="tel" className="form-control" placeholder="Mobile Number*" />
+                  </div>
+                  <button
+                    type="submit"
+                    className="btn btn-warning w-100 fw-bold"
+                    style={{ background: "#b85423", color: "white" }}
+                  >
+                    Get Start Now &gt;
+                  </button>
+                </form>
+              </div>
+            </div>
+
+            {/* Sidebar Image */}
+            <img
+              src={img2}
+              alt="NGO Partnership"
+              className="img-fluid rounded-3 mt-4"
+            />
+          </div>
         </div>
       </div>
 
+      {/* Bottom Banner */}
+      <div className="container d-flex justify-content-center my-5">
+        <img src={img3} alt="NGO Registration Process" className="img-fluid" />
+      </div>
 
-
-    </div>
-</div>
-
-<div className="container d-flex justify-content-center">
-            <img src={img3} alt="" style={{ maxWidth: "100%" }} />
-        </div>
-
-<Element_3/>
-
-
-
-
+      <Element_3 />
     </>
   )
 }

@@ -113,22 +113,85 @@ const Navbar = () => {
                 <ul className="dropdown-menu" aria-labelledby="registrationDropdown">
                   {[
                     { name: "Udyam MSME Registration", path: "registration/Udyam_msme_registrtion" },
-                    { name: "IEF Registration", path: "registration/IEF" },
-                    { name: "FSSAI Registration", path: "registration/FSSAI" },
-                    { name: "Shop & Establishment License", path: "registration/Shop_Establishment" },
-                    { name: "ISO Registration Online", path: "registration/ISO" },
-                    { name: "Professional Tax Registration", path: "registration/Professional_Tax" },
-                    { name: "Digital Signature Certificate", path: "registration/DSC" },
-                    { name: "FCRA Registration", path: "registration/FCRA" },
-                    { name: "80G And 12A Registration", path: "registration/80G_12A" },
-                    { name: "12AA Registration", path: "registration/12AA" },
-                    { name: "ICEGATE Registration", path: "registration/ICEGATE" },
-                    { name: "Darpan Registration", path: "registration/Darpan" },
-                    { name: "LEI Code Registration", path: "registration/LEI_Code" },
-                    { name: "APEDA Registration Online", path: "registration/APEDA" },
-                    { name: "Apply FSSAI License Online", path: "registration/FSSAI_License" },
-                    { name: "Digital Signature - DGFT Version", path: "registration/DSC_DGFT" },
-                    { name: "RCMC Registration", path: "registration/RCMC" }
+                    { name: "IEF Registration", path: "registration/Iec_registration" },
+                    { name: "FSSAI Registration", path: "registration/FSSAI_registration" },
+                    { name: "Shop & Establishment License", path: "registration/Shop_establishment_license" },
+                    { name: "ISO Registration Online", path: "registration/ISO_registration_online" },
+                    { name: "Professional Tax Registration", path: "registration/Professional_tax_registration" },
+                    { name: "Digital Signature Certificate", path: "registration/Digital_signature_certificate" },
+                    { name: "FCRA Registration", path: "registration/FCRA_registrationn" },
+                    { name: "80G And 12A Registration", path: "registration/EightyG_12A_registration" },
+                    { name: "12AA Registration", path: "registration/TwelveAA_registration" },
+                    { name: "ICEGATE Registration", path: "registration/ICEGATE_registration" },
+                    { name: "Darpan Registration", path: "registration/Darpan_registration" },
+                    { name: "LEI Code Registration", path: "registration/LEI_code_registration" },
+                    { name: "APEDA Registration Online", path: "registration/APEDA_Registration_online" },
+                    { name: "Apply FSSAI License Online", path: "registration/Apply_FSSAI_license_online" },
+                    { name: "Digital Signature - DGFT Version", path: "registration/Digital_signature_DGFT_version" },
+                    { name: "RCMC Registration", path: "registration/RCMC_registration" }
+                  ].map((item, idx) => (
+                    <li key={idx}>
+                      <Link className="dropdown-item" to={item.path}>
+                        {item.name}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </li>
+              <li className="nav-item dropdown mx-2">
+                <Link
+                  to="#"
+                  className="nav-link dropdown-toggle"
+                  id="gstDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  GST
+                </Link>
+                <ul className="dropdown-menu" aria-labelledby="gstDropdown">
+                  {[
+                    { name: "GST Registration Online", path: "gst/GST_registration_online" },
+                    { name: "GST LUT Filing", path: "gst/GST_LUT_filing" },
+                    { name: "GST Registration Cancellation", path: "gst/GST_registration_cancellation" },
+                    { name: "GST Advisory Services", path: "gst/GST_Advisory_services" },
+                    { name: "GST Revocation Online", path: "gst/GST_revocation_online" },
+                    { name: "GST Return Filing", path: "gst/GST_return_filing" },
+                    { name: "GST Annual Return Filing", path: "gst/GST_annual_return_filing" },
+                    { name: "GST Invoicing And Filing Software", path: "gst/GST_invoicing_and_filing_software" },
+                    { name: "GST Notice Reply", path: "gst/GST_notice_reply" },
+                    { name: "GST Registration For Foreigners", path: "gst/GST_registration_foreigners" },
+                    { name: "GST Registration Amendment", path: "gst/GST_registration_amendment" },
+                  ].map((item, idx) => (
+                    <li key={idx}>
+                      <Link className="dropdown-item" to={item.path}>
+                        {item.name}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </li>
+              <li className="nav-item dropdown mx-2">
+                <Link
+                  to="#"
+                  className="nav-link dropdown-toggle"
+                  id="taxationDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Taxation
+                </Link>
+                <ul className="dropdown-menu" aria-labelledby="taxationDropdown">
+                  {[
+                    { name: "Income Tax Return Filing", path: "taxation/Income_tax_return_filing" },
+                    { name: "TDS Return Filing", path: "taxation/TDS_return_filing" },
+                    { name: "PF Return Filing", path: "taxation/PF_return_filing" },
+                    { name: "ESI Return Filing", path: "taxation/ESI_return_filing" },
+                    { name: "PT Return Filing", path: "taxation/PT_return_filing" },
+                    { name: "Income Tax Notice Reply", path: "taxation/Income_tax_notice_reply" },
+                    { name: "TAN Registration Online", path: "taxation/Tan_registration_online" },
+                    { name: "TAN Registration Online", path: "taxation/Business_tax_filing" },
                   ].map((item, idx) => (
                     <li key={idx}>
                       <Link className="dropdown-item" to={item.path}>
@@ -139,10 +202,11 @@ const Navbar = () => {
                 </ul>
               </li>
 
+
+
               {/* Other Nav Items */}
               {[
-                { name: "Taxation", path: "/taxation" },
-                { name: "GST", path: "/gst" },
+
                 { name: "Trademark", path: "/trademark" },
                 { name: "Compliance", path: "/compliance" },
                 { name: "Regulatory", path: "/regulatory" },
